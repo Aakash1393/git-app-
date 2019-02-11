@@ -1,0 +1,616 @@
+.githubicon{
+
+margin-left:-950px;
+margin-top:-9px;
+
+}
+
+
+.icon-bar {
+    width: 9000px;
+    background-color:black;
+    overflow: auto;
+    margin-top:-20px;
+    height:75px;
+    
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.sizebox{
+  margin-left:60px;
+  width:10px;
+  margin-top:16px;
+}
+
+
+.buttonsize{
+  width:40px;
+  margin-left:-2080px;
+  margin-top:5px;
+    
+}
+
+
+.buttoncolour{
+  background-color:silver;
+  width:170px;
+  margin-left:115px;
+}
+
+
+
+.headingPosition{
+  
+  margin-top:30px
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:33px;
+    
+}
+
+.headings{
+  margin-left:25px;
+  margin-top:-93px;
+}
+
+.dotPosition{
+margin-left:10px;
+}
+
+/* Primary Styles */
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   font-size: 1em;
+   color: #333;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+em {
+   font-style: normal;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+} 
+
+/* Layout */
+.s-layout {
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.s-layout__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+/* Sidebar */
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4em;
+   background: black;
+}
+
+.s-sidebar__trigger > i {
+   display: inline-block;
+   margin: 1.5em 0 0 1.5em;
+   color: white;
+}
+
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   left: -15em;
+   overflow: hidden;
+   transition: all .3s ease-in;
+   width: 15em;
+   height: 100%;
+   background: black;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   left: 0;
+}
+
+.s-sidebar__nav ul {
+   position: absolute;
+   top: 4em;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 4em;
+}
+
+.s-sidebar__nav-link em {
+   position: absolute;
+   top: 50%;
+   left: 4em;
+   transform: translateY(-50%);
+}
+
+.s-sidebar__nav-link:hover {
+   background: white;
+}
+
+.s-sidebar__nav-link > i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 4em;
+   height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* Mobile First */
+@media (min-width: 42em) {
+   .s-layout__content {
+      margin-left: 4em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      width: 4em;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+   }
+   
+   .s-sidebar__nav:hover,
+   .s-sidebar__nav:focus,
+   .s-sidebar__trigger:hover + .s-sidebar__nav,
+   .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 15em;
+   }
+}
+
+@media (min-width: 68em) {
+   .s-layout__content {
+      margin-left: 15em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      display: none
+   }
+   
+   .s-sidebar__nav {
+      width: 15em;
+   }
+   
+   .s-sidebar__nav ul {
+      top: 1.3em;
+   }
+}
+
+.userview{
+  margin-top:-430px;
+  margin-left:-100px;
+}
+
+.userDetail{
+  margin-left:-240px;
+}
+
+.followerInfo{
+  margin-left:80px;
+}
+
+.followerIcon{
+  width:8%;
+}
+.avatarIcon{
+
+margin-left:750px;
+margin-top:-180px;
+
+}
+
+.countlist{
+  margin-top:280px;
+  margin-left:180px;
+}
+
+.tablecolour{
+
+  background-color:silver;
+  height:100px;
+  width:500px;
+  margin-left:500px;
+  margin-top:210px;
+}
+
+
+.followcolour{
+
+  background-color:silver;
+  height:40px;
+  width:200px;
+  margin-left:640px;
+  margin-top:210px;
+}
+
+
+@media only screen and (max-width: 1125px)
+{
+  .followerInfo{
+    margin-left:320px;
+  }
+
+  .followerIcon{
+    width:14%;
+  }
+}
+
+@media only screen and (max-width: 1074px)
+{
+   .avatarIcon{
+      margin-left:730px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:14%;
+    }
+}
+
+@media only screen and (max-width: 1038px)
+{
+   .avatarIcon{
+      margin-left:710px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:14%;
+    }
+}
+
+@media only screen and (max-width: 993px)
+{
+   .avatarIcon{
+      margin-left:690px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:16%;
+    }
+}
+
+@media only screen and (max-width: 974px)
+{
+   .avatarIcon{
+      margin-left:670px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:16%;
+    }
+}
+
+
+
+@media only screen and (max-width: 960px)
+{
+   .avatarIcon{
+      margin-left:650px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:16%;
+    }
+}
+
+@media only screen and (max-width: 911px)
+{
+   .avatarIcon{
+      margin-left:630px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:16%;
+    }
+}
+
+
+
+@media only screen and (max-width: 898px)
+{
+   .avatarIcon{
+      margin-left:610px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:18%;
+    }
+}
+
+@media only screen and (max-width: 821px)
+{
+   .avatarIcon{
+      margin-left:590px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:20%;
+    }
+}
+
+@media only screen and (max-width: 756px)
+{
+   .avatarIcon{
+      margin-left:570px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:24%;
+    }
+}
+
+@media only screen and (max-width: 722px)
+{
+   .avatarIcon{
+      margin-left:550px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:28%;
+    }
+}
+
+@media only screen and (max-width: 669px)
+{
+   .avatarIcon{
+      margin-left:510px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:32%;
+    }
+}
+
+@media only screen and (max-width: 635px)
+{
+   .avatarIcon{
+      margin-left:480px;
+      margin-top:-180px;
+    }
+
+    .followerIcon{
+      width:35%;
+    }
+}
+
+@media only screen and (max-width: 580px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-150px;
+    }
+
+    .followerIcon{
+      width:40%;
+    }
+}
+
+@media only screen and (max-width: 532px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-170px;
+    }
+
+    .followerIcon{
+      width:45%;
+    }
+}
+
+@media only screen and (max-width: 524px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-190px;
+    }
+
+    .followerIcon{
+      width:47%;
+    }
+}
+
+@media only screen and (max-width: 485px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-210px;
+    }
+
+    .followerIcon{
+      width:49%;
+    }
+}
+
+@media only screen and (max-width: 468px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-230px;
+    }
+
+    .followerIcon{
+      width:50%;
+    }
+}
+
+@media only screen and (max-width: 446px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-250px;
+    }
+
+    .followerIcon{
+      width:50%;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-260px;
+    }
+
+    .followerIcon{
+      width:50%;
+    }
+}
+
+@media only screen and (max-width: 415px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-280px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}
+
+@media only screen and (max-width: 394px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-300px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}
+
+@media only screen and (max-width: 374px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-320px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}
+
+@media only screen and (max-width: 352px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-340px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}
+
+@media only screen and (max-width: 337px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-360px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}
+
+@media only screen and (max-width: 315px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-380px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}
+
+@media only screen and (max-width: 292px)
+{
+   .userview{
+      margin-top:-430px;
+      margin-left:-400px;
+    }
+
+    .followerIcon{
+      width:53%;
+    }
+}

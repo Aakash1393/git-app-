@@ -1,0 +1,433 @@
+
+
+
+.buttoncolour{
+  background-color:silver;
+  width:170px;
+  margin-left:115px;
+}
+
+
+
+.headingPosition{
+  
+  margin-top:30px
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:33px;
+    
+}
+
+.headings{
+  margin-left:25px;
+  margin-top:-93px;
+}
+
+.dotPosition{
+margin-left:10px;
+}
+
+/* Primary Styles */
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   font-size: 1em;
+   color: #333;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+em {
+   font-style: normal;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+} 
+
+/* Layout */
+.s-layout {
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.s-layout__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+/* Sidebar */
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4em;
+   background: black;
+}
+
+.s-sidebar__trigger > i {
+   display: inline-block;
+   margin: 1.5em 0 0 1.5em;
+   color: white;
+}
+
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   left: -15em;
+   overflow: hidden;
+   transition: all .3s ease-in;
+   width: 15em;
+   height: 100%;
+   background: black;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   left: 0;
+}
+
+.s-sidebar__nav ul {
+   position: absolute;
+   top: 4em;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 4em;
+}
+
+.s-sidebar__nav-link em {
+   position: absolute;
+   top: 50%;
+   left: 4em;
+   transform: translateY(-50%);
+}
+
+.s-sidebar__nav-link:hover {
+   background: white;
+}
+
+.s-sidebar__nav-link > i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 4em;
+   height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* Mobile First */
+@media (min-width: 42em) {
+   .s-layout__content {
+      margin-left: 4em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      width: 4em;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+   }
+   
+   .s-sidebar__nav:hover,
+   .s-sidebar__nav:focus,
+   .s-sidebar__trigger:hover + .s-sidebar__nav,
+   .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 15em;
+   }
+}
+
+@media (min-width: 68em) {
+   .s-layout__content {
+      margin-left: 15em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      display: none
+   }
+   
+   .s-sidebar__nav {
+      width: 15em;
+   }
+   
+   .s-sidebar__nav ul {
+      top: 1.3em;
+   }
+}
+
+.userview{
+  margin-top:-430px;
+  margin-left:-15px;
+}
+
+@media only screen and (max-width: 1125px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-135px;
+  }
+}
+
+@media only screen and (max-width: 1095px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-145px;
+  }
+}
+
+@media only screen and (max-width: 1063px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-155px;
+  }
+}
+
+@media only screen and (max-width: 1047px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-165px;
+  }
+}
+
+@media only screen and (max-width: 1039px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-175px;
+  }
+}
+
+@media only screen and (max-width: 996px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-185px;
+  }
+}
+
+@media only screen and (max-width: 966px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-205px;
+  }
+}
+
+@media only screen and (max-width: 948px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-225px;
+  }
+}
+
+@media only screen and (max-width: 897px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-245px;
+  }
+}
+
+@media only screen and (max-width: 854px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-265px;
+  }
+}
+
+@media only screen and (max-width: 824px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-285px;
+  }
+}
+
+@media only screen and (max-width: 776px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-305px;
+  }
+}
+
+@media only screen and (max-width: 738px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-325px;
+  }
+}
+
+@media only screen and (max-width: 677px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-345px;
+  }
+}
+
+@media only screen and (max-width: 628px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-365px;
+  }
+}
+
+@media only screen and (max-width: 598px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-385px;
+  }
+}
+
+@media only screen and (max-width: 571px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-405px;
+  }
+}
+
+@media only screen and (max-width: 553px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-415px;
+  }
+}
+
+@media only screen and (max-width: 498px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-425px;
+  }
+}
+
+@media only screen and (max-width: 487px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-435px;
+  }
+}
+
+@media only screen and (max-width: 477px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-445px;
+  }
+}
+
+@media only screen and (max-width: 432px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-455px;
+  }
+}
+
+@media only screen and (max-width: 422px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-475px;
+  }
+}
+
+@media only screen and (max-width: 402px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-495px;
+  }
+}
+
+@media only screen and (max-width: 375px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-515px;
+  }
+}
+
+@media only screen and (max-width: 355px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-525px;
+  }
+}
+
+@media only screen and (max-width: 343px)
+{
+  .userview{
+    margin-top:-430px;
+    margin-left:-530px;
+  }
+}
+
+
+
+.avataricon{
+
+margin-left:540px;
+margin-top:-180px;
+
+}
+
+.countlist{
+  margin-top:280px;
+  margin-left:180px;
+}

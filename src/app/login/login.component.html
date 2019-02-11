@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+   
+  <div style="text-align:center">
+    <div class="container-fluid">
+      <div class="githubicon">
+        <i class="fa fa-github" aria-hidden="true" ></i>
+      </div>
+      <p class="signin">Sign in to gatapp</p>  
+      
+         <div class="form-group">
+
+            <label>Username </label>
+            <br><br>
+            <input #name type="text" placeholder="name" class="form-control">
+            <br><br><br>
+            <label>Password</label>
+            <br><br>
+            <input #password type="password" placeholder="password" class="form-control">
+         </div>
+         <br><br>
+         <button type="button" (click)="getUser(name.value,password.value)" class="form-control">Sign in</button>
+      
+    </div>    
+  </div> 
+    
+</html>

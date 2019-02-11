@@ -1,0 +1,119 @@
+
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  </head>
+<div class="container-fluid">
+
+            <div class="s-layout">
+              <!-- Sidebar -->
+              <div class="s-layout__sidebar" id="side Icon">
+                <a class="s-sidebar__trigger">
+                  
+                   <i class="fa fa-bars"></i>
+                  
+                </a>
+
+                <nav class="s-sidebar__nav">
+                   <ul>
+                      <li>
+                         <a [routerLink]="['/user']" class="s-sidebar__nav-link" href="#0">
+                         
+                            <i class="fa fa-home"></i><em>Overview</em>
+                         </a>
+                      </li>
+                      <li>
+                         <a [routerLink]='["/repository"]' class="s-sidebar__nav-link" href="#0">
+                           <i class="fa fa-file"></i><em>Repositories</em>
+                         </a>
+                      </li>
+                      <li>
+                         <a [routerLink]='["/followers"]' class="s-sidebar__nav-link" href="#0">
+                            <i class="fa fa-user"></i><em>Followers</em>
+                         </a>
+                      </li>
+                      <li>
+                         <a [routerLink]='["/following"]' class="s-sidebar__nav-link" href="#0">
+                            <i class="fa fa-user"></i><em>Following</em>
+                         </a>
+                      </li>
+                       <li>
+                         <a [routerLink]='["/stars"]' class="s-sidebar__nav-link" href="#0">
+                            <i class="fa fa-star-o"></i><em>Stars</em>
+                         </a>
+                      </li>
+                       <li>
+                         <a [routerLink]='["/search"]' class="s-sidebar__nav-link" href="#0">
+                            <i class="fa fa-search"></i><em>Search</em>
+                         </a>
+                      </li>
+                       <li>
+                         <a [routerLink]='["/gist"]' class="s-sidebar__nav-link" href="#0">
+                            <i class="fa fa-file"></i><em>Gist</em>
+                         </a>
+                      </li>
+                   </ul>
+                </nav>
+              </div>
+
+            </div>
+
+      <div class="row userview">
+
+              <div *ngFor="let user of userDetails" class="avataricon">
+                <div style="width:400px">
+               
+                    <img src={{user.avatar_url}}  style="width:40%">
+                  <div>
+                    <h4>{{user.name}}</h4>
+                    <p>{{user.login}}</p>
+                    
+                  </div>
+                </div>
+        
+              </div>
+              
+           
+
+              <div *ngFor="let user of userDetails" class="countlist">
+                   <table>
+                      <tr>
+                         <td>
+                           <p class="headings form-group">Repositories
+           
+                            <span class="dot">{{user.public_repos}}</span>
+           
+                           </p>
+         
+                         </td>
+                          <td>
+                           <p class="headings form-group">Followers
+                           <span class="dot">{{user.followers}}</span>
+                           </p>
+                          </td>
+                          <td>
+                           <p class="headings form-group">Following
+                           <span class="dot">{{user.following}}</span>
+                           </p>
+                       
+                         </td>
+                         <td>
+                           <p class="headings form-group">Stars
+                           <span class="dot">{{user.star}}</span>
+                           </p>
+                       
+                         </td>
+                      </tr>
+                  
+                   </table>
+                   
+              </div>
+            
+            </div>
+                 
+            
+
+            <div id="repo">
+            </div>
+            
+</div>  

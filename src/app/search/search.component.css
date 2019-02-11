@@ -1,0 +1,2209 @@
+
+
+ul {
+list-style-type: none;
+}
+
+
+
+.rightSideClass {
+    float: right;
+    background: #ddd;
+    border-radius: 0.5em;
+  }
+  
+  .leftSideClass {
+    float: left;
+    background: #55C1E7;
+    border-radius: 0.5em;
+  }
+  
+  .circle-green:before {
+    content: ' \25CF';
+    font-size: 1em;
+    color: green;
+  }
+  
+  .circle-red:before {
+    content: ' \25CF';
+    font-size: 1em;
+    color: red;
+  }
+  
+  .cursorPointer {
+    cursor: pointer;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .floatLeft {
+    float: left;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 2.5em 0;
+    color: white;
+  }
+  
+  .container {
+    margin: 0 auto;
+    background: #444753;
+    border-radius: 0.3em;
+  }
+  
+  .people-list {
+    float: left;
+  }
+  
+  .people-list input {
+    border-radius: 0.2em;
+    border: none;
+    padding: 1em;
+    color: white;
+    background: #6A6C75;
+    width: 90%;
+    font-size: 1em;
+  }
+  
+  .people-list .fa-search {
+    position: relative;
+    left: -1.8em;
+  }
+  
+  .people-list ul {
+    padding: 0;
+  }
+  
+  .people-list ul li .userPresence {
+    float: left;
+    padding: 0.7em 0.2em;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .textCapitalize {
+    text-transform: capitalize;
+    font-size: 1.2em;
+  }
+  
+  .people-list img {
+    float: left;
+  }
+  
+  .people-list .about {
+    float: left;
+  }
+  
+  .people-list .about {
+    padding-left: 0.4em;
+  }
+  
+  
+  
+  .chat {
+    height: 100vh;
+    float: left;
+    background: #F2F5F8;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    color: #434651;
+  }
+  
+  .chat .chat-header {
+    padding: 0.2em;
+    border-bottom: 0.15em solid white;
+  }
+  
+  .chat .chat-header img {
+    float: left;
+  }
+  
+  .chat .chat-header .chat-about {
+    float: left;
+    padding-left: 0.8em;
+    margin-top: 0.4em;
+  }
+  
+  .chat .chat-header .chat-with {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .chat .chat-header .chat-num-messages {
+    color: #92959E;
+  }
+  
+  .chat .chat-header .fa-star {
+    float: right;
+    color: #D8DADF;
+    font-size: 1.42em;
+    margin-top: 0.85em;
+  }
+  
+  .chat .chat-history {
+    padding: 2em 2em 1.42em;
+    border-bottom: 0.15em solid white;
+    overflow-y: scroll;
+    height: 80vh;
+  }
+  
+  .chat .chat-history .message-data {
+    margin-bottom: 1em;
+  }
+  
+  .chat .chat-history .message-data-time {
+    color: #a8aab1;
+    padding-left: 0.4em;
+  }
+  
+  .chat .chat-history .message {
+    color: white;
+    padding: 0.5em 1.42em;
+    line-height: 1.9em;
+    font-size: 1.1em;
+    border-radius: 7px;
+    margin-bottom: 2em;
+    width: 90%;
+    position: relative;
+  }
+  
+  .chat .chat-history .message:after {
+    bottom: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #86BB71;
+    border-width: 0.8em;
+    margin-left: -0.8em;
+  }
+  
+  .chat .chat-history .my-message {
+    background: #86BB71;
+  }
+  
+  .chat .chat-history .other-message {
+    background: #94C2ED;
+  }
+  
+  .chat .chat-history .other-message:after {
+    border-bottom-color: #94C2ED;
+    left: 90%;
+  }
+  
+  .chat .chat-message textarea {
+    width: 100%;
+    border: none;
+    padding: 0.8em 1.42em;
+    margin-bottom: 0.8em;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .chat .chat-message .fa-file-o,
+  .chat .chat-message .fa-file-image-o {
+    font-size: 1.1em;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .chat .chat-message button {
+    float: right;
+    color: #94C2ED;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: #F2F5F8;
+  }
+  
+  .chat .chat-message button:hover {
+    color: #75b1e8;
+  }
+  
+  .online,
+  .offline,
+  .me,
+  .warning {
+    margin-left: 593px;
+    font-size: 8em;
+    color:green;
+  }
+  
+  .online {
+    color: #86BB71;
+  }
+  
+  .offline {
+    color: #E38968;
+  }
+  
+  .me {
+    color: #94C2ED;
+  }
+  
+  .warning {
+    color: #e78930;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  .align-right {
+    text-align: right;
+  }
+  
+  .float-right {
+    float: right;
+  }
+  
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  
+  .customButton {
+    width: 100%;
+  }
+  
+  .activeChat {
+    background: #393a41;
+  }
+  
+  .typeOfChats {
+    background: #393a41;
+    color: white;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  
+  .blankContent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #999;
+  }
+  @media only screen and (max-width:575px) {
+    .chat .chat-history {
+      height:50vh;
+    }
+  }
+  @media only screen and (min-width:576px) and (max-width:768px) {
+    .chat .chat-history {
+      height:50vh;
+    }
+  }
+  @media only screen and (min-width:769px) and (max-width:992px) {
+    .chat .chat-history {
+      height:65vh;
+    }
+  }
+  @media only screen and (min-width:993px) and (max-width:1200  px) {
+    .chat .chat-history {
+      height:50vh;
+    }
+  }
+
+ /* user list items */
+
+ .crop {
+  border-radius: 100%;
+  line-height: 1em;
+  padding: 1em;
+  text-align: center;
+  margin: 0em;
+  width: 3em;
+  height: 3em;
+  float: left;
+  text-transform: uppercase;
+}
+
+.about {
+  float: left;
+  padding-left: 0.4em;
+}
+
+.online,
+.offline,
+.me,
+.warning {
+  margin-right: 3px;
+  font-size: 0.8em;
+}
+
+.online {
+  color: #86BB71;
+}
+
+.offline {
+  color: #E38968;
+}
+
+.me {
+  color: #94C2ED;
+}
+
+
+.status {
+  color: #92959E;
+}
+
+.name {
+  float: left;
+}
+
+
+
+.githubicon{
+
+margin-left:-950px;
+margin-top:-9px;
+
+}
+
+
+.icon-bar {
+    width: 9000px;
+    background-color:black;
+    overflow: auto;
+    margin-top:-20px;
+    height:75px;
+    
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.sizebox{
+  margin-left:60px;
+  width:10px;
+  margin-top:16px;
+}
+
+
+.buttonsize{
+  width:40px;
+  margin-left:-2080px;
+  margin-top:5px;
+    
+}
+
+
+.buttoncolour{
+  background-color:silver;
+  width:170px;
+  margin-left:115px;
+}
+
+
+
+.headingPosition{
+  
+  margin-top:30px
+}
+
+.dot {
+    height: 25px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 80%;
+    display: inline-block;
+    margin-top:33px;
+    
+}
+
+.headings{
+  margin-left:25px;
+  margin-top:-93px;
+}
+
+.dotPosition{
+margin-left:10px;
+}
+
+/* Primary Styles */
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   font-size: 1em;
+   color: #333;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+em {
+   font-style: normal;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+} 
+
+/* Layout */
+.s-layout {
+   display: flex;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.s-layout__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+/* Sidebar */
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4em;
+   background: black;
+}
+
+.s-sidebar__trigger > i {
+   display: inline-block;
+   margin: 1.5em 0 0 1.5em;
+   color: white;
+}
+
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   left: -15em;
+   overflow: hidden;
+   transition: all .3s ease-in;
+   width: 15em;
+   height: 100%;
+   background: black;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   left: 0;
+}
+
+.s-sidebar__nav ul {
+   position: absolute;
+   top: 4em;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 4em;
+}
+
+.s-sidebar__nav-link em {
+   position: absolute;
+   top: 50%;
+   left: 4em;
+   transform: translateY(-50%);
+}
+
+.s-sidebar__nav-link:hover {
+   background: white;
+}
+
+.s-sidebar__nav-link > i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 4em;
+   height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* Mobile First */
+@media (min-width: 42em) {
+   .s-layout__content {
+      margin-left: 4em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      width: 4em;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+   }
+   
+   .s-sidebar__nav:hover,
+   .s-sidebar__nav:focus,
+   .s-sidebar__trigger:hover + .s-sidebar__nav,
+   .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 15em;
+   }
+}
+
+@media (min-width: 68em) {
+   .s-layout__content {
+      margin-left: 15em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      display: none
+   }
+   
+   .s-sidebar__nav {
+      width: 15em;
+   }
+   
+   .s-sidebar__nav ul {
+      top: 1.3em;
+   }
+}
+
+.userview{
+  margin-top:400px;
+  margin-left:70px;
+}
+
+.avataricon{
+
+margin-left:480px;
+margin-top:-180px;
+
+}
+
+#repo{
+  margin-top:100px;
+  margin-left:155px;
+}
+
+.countlist{
+  margin-top:280px;
+  margin-left:410px;
+}
+
+.searchsize{
+ width:400px;
+ margin-left:370px;
+ margin-top:-550px;
+}
+
+.userdetailsview{
+  margin-top:330px;
+}
+
+#inputSearch{
+  margin-left:170px;
+  width:427px;
+}
+
+
+#searchButton{
+  margin-left:620px;
+  width:67px;
+  margin-top:-34px;
+}
+
+
+
+@media only screen and (max-width: 1125px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:360px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:290px;
+  }
+
+  .searchsize{
+   width:400px;
+   margin-left:260px;
+  }
+}
+
+@media only screen and (max-width: 1014px)
+{
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:320px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:260px;
+  }
+
+  .searchsize{
+   width:400px;
+   margin-left:180px;
+  }
+}
+
+@media only screen and (max-width: 981px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:280px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:230px;
+  }
+
+  .searchsize{
+   width:400px;
+   margin-left:120px;
+  }
+}
+
+@media only screen and (max-width: 935px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:260px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:210px;
+  }
+
+  .searchsize{
+   width:400px;
+   margin-left:95px;
+  }
+}
+
+@media only screen and (max-width: 900px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:220px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:150px;
+  }
+
+  .searchsize{
+   width:400px;
+   margin-left:85px;
+  }
+}
+
+@media only screen and (max-width: 837px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:200px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:130px;
+  }
+
+  .searchsize{
+   width:400px;
+   margin-left:75px;
+  }
+}
+
+@media only screen and (max-width: 818px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:180px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:110px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:65px;
+  }
+}
+
+@media only screen and (max-width: 798px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:160px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:90px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:55px;
+  }
+}
+
+@media only screen and (max-width: 777px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:140px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:70px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:45px;
+  }
+}
+
+@media only screen and (max-width: 763px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:140px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:70px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:35px;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 756px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:130px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:60px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:25px;
+  }
+}
+
+@media only screen and (max-width: 747px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:120px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:50px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:15px;
+  }
+}
+
+@media only screen and (max-width: 736px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:110px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:40px;
+  }
+
+  .searchsize{
+   width:300px;
+   margin-left:5px;
+  }
+}
+
+@media only screen and (max-width: 726px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:100px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:30px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-15px;
+  }
+}
+
+@media only screen and (max-width: 712px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:90px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:20px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-25px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:90px;
+  }
+}
+
+@media only screen and (max-width: 706px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:80px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:10px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-35px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:80px;
+  }
+}
+
+@media only screen and (max-width: 696px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:70px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:5px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-45px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:70px;
+  }
+}
+
+@media only screen and (max-width: 686px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:50px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-10px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-55px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:50px;
+  }
+}
+
+@media only screen and (max-width: 666px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:30px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-30px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-65px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:30px;
+  }
+}
+
+@media only screen and (max-width: 646px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:250px;
+   margin-left:-75px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+
+@media only screen and (max-width: 644px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:240px;
+   margin-left:-85px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 634px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:240px;
+   margin-left:-95px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 624px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:240px;
+   margin-left:-105px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+
+@media only screen and (max-width: 613px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:240px;
+   margin-left:-115px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 606px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-20px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-70px;
+  }
+
+  .searchsize{
+   width:240px;
+   margin-left:-125px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-20px;
+  }
+}
+
+@media only screen and (max-width: 588px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-40px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-90px;
+  }
+
+  .searchsize{
+   width:240px;
+   margin-left:-135px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-40px;
+  }
+}
+
+@media only screen and (max-width: 535px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:230px;
+   margin-left:-135px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+
+
+@media only screen and (max-width: 566px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-60px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-90px;
+  }
+
+  .searchsize{
+   width:190px;
+   margin-left:-145px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-50px;
+    width:600px;
+  }
+}
+
+
+@media only screen and (max-width: 583px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:10px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-50px;
+  }
+
+  .searchsize{
+   width:170px;
+   margin-left:-165px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+@media only screen and (max-width: 546px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-70px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-100px;
+  }
+
+  .searchsize{
+   width:100px;
+   margin-left:-185px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-30px;
+    width:510px;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 520px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-70px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-100px;
+  }
+
+  .searchsize{
+   width:90px;
+   margin-left:-195px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-30px;
+    width:510px;
+  }
+
+    #inputSearch{
+      margin-left:270px;
+      width:270px;
+    }
+
+
+    #searchButton{
+      margin-left:570px;
+      width:64px;
+      margin-top:-34px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 496px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-80px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+  }
+
+  .searchsize{
+   width:320px;
+   margin-left:-80px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-35px;
+    width:490px;
+  }
+
+   #inputSearch{
+      margin-left:150px;
+      width:270px;
+    }
+
+
+    #searchButton{
+      margin-left:460px;
+      width:64px;
+      margin-top:-34px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 475px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-80px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+  }
+
+  .searchsize{
+   width:320px;
+   margin-left:-80px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-35px;
+    width:490px;
+  }
+
+   #inputSearch{
+      margin-left:130px;
+      width:270px;
+    }
+
+
+    #searchButton{
+      margin-left:430px;
+      width:64px;
+      margin-top:-34px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 466px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-100px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-120px;
+  }
+
+  .searchsize{
+   width:271px;
+   margin-left:-70px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:4px;
+    width:360px;
+  }
+
+    #inputSearch{
+      margin-left:100px;
+      width:270px;
+    }
+
+
+    #searchButton{
+      margin-left:380px;
+      width:64px;
+      margin-top:-34px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 427px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-110px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-120px;
+  }
+
+  .searchsize{
+   width:261px;
+   margin-left:-70px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:2px;
+    width:355px;
+  }
+}
+
+
+
+@media only screen and (max-width: 417px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-120px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+    width:0px;
+
+  }
+
+  .searchsize{
+   width:220px;
+   margin-left:-80px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-1px;
+    width:360px;
+  }
+}
+
+
+@media only screen and (max-width: 406px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-100px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+  }
+
+  .searchsize{
+   width:210px;
+   margin-left:-85px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-5px;
+    width:360px;
+  }
+}
+
+
+
+@media only screen and (max-width: 390px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-100px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+  }
+
+   #inputSearch{
+      margin-left:80px;
+      width:230px;
+    }
+
+
+    #searchButton{
+      margin-left:320px;
+      width:58px;
+      margin-top:-34px;
+    }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-5px;
+    width:350px;
+  }
+}
+
+@media only screen and (max-width: 377px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-100px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+  }
+
+  .searchsize{
+   width:210px;
+   margin-left:-85px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-5px;
+    width:340px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 363px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-110px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-110px;
+  }
+
+  .searchsize{
+   width:200px;
+   margin-left:-85px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-5px;
+    width:330px;
+  }
+}
+@media only screen and (max-width: 351px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-130px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-96px;
+    width:0px;
+    
+  }
+
+  .searchsize{
+   width:160px;
+   height:40px;
+   margin-left:-60px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:1px;
+    width:290px;
+  }
+
+   #inputSearch{
+      margin-left:50px;
+      width:230px;
+    }
+
+
+    #searchButton{
+      margin-left:300px;
+      width:60px;
+      margin-top:-34px;
+    }
+}
+
+
+@media only screen and (max-width: 344px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-125px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-100px;
+    
+    
+  }
+
+  .searchsize{
+   width:170px;
+   height:40px;
+   margin-left:-60px;
+  }
+
+  .searchButton{
+    height:45px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:10px;
+  }
+}
+
+@media only screen and (max-width: 341px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-120px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-105px;
+    width:0px;
+    
+  }
+
+  .searchsize{
+   width:160px;
+   height:40px;
+   margin-left:-55px;
+  }
+
+  .searchButton{
+    height:43px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:1px;
+  }
+}
+
+@media only screen and (max-width: 337px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-130px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-111px;
+    
+    
+  }
+
+  .searchsize{
+   width:170px;
+   height:40px;
+   margin-left:-65px;
+  }
+
+  .searchButton{
+    height:45px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-10px;
+  }
+
+   #inputSearch{
+      margin-left:30px;
+      width:200px;
+    }
+
+
+    #searchButton{
+      margin-left:250px;
+      width:59px;
+      margin-top:-34px;
+    }
+}
+
+@media only screen and (max-width: 329px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-140px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-111px;
+    width:0px; 
+    
+  }
+
+  .searchsize{
+   width:160px;
+   height:40px;
+   margin-left:-55px;
+  }
+
+  .searchButton{
+    height:45px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-10px;
+  }
+}
+
+
+@media only screen and (max-width: 320px)
+{
+  
+
+  .userdetailsview{
+    margin-top:330px;
+  }
+
+  .avataricon{
+
+  margin-left:-110px;
+  margin-top:-180px;
+
+  }
+
+  .countlist{
+    margin-top:280px;
+    margin-left:-107px;
+    width:0px;
+   
+    
+  }
+
+  .searchsize{
+   width:170px;
+   height:40px;
+   margin-left:-45px;
+  }
+
+  .searchButton{
+    height:45px;
+  }
+
+  #repo{
+    margin-top:120px;
+    margin-left:-18px;
+  }
+}
+
